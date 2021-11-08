@@ -26,7 +26,7 @@ class Solution //very very easy
         LinkedList<int[]> merged = new LinkedList<>();
         for (int[] interval : intervals) 
         {
-            //if linked list is empty or (if arr interval begin is greater than linked list last digit) then add
+            //if linked list is empty or (if arr interval begin is greater than linked list last digit) then add interval
             if (merged.isEmpty() || merged.getLast()[1] < interval[0]) 
             {
                 merged.add(interval);
